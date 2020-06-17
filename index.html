@@ -1,0 +1,48 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Healty Diet</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Italianno|Philosopher:400,700,700i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<script src="https://kit.fontawesome.com/c8167e002e.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h2 class="animated infinite pulse"><a class="navbar-brand" href="#">Healthy Diet</a></h2>			
+				<ul class="menubar menu_small">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+			<a href="javascript:void(0);" id="iconbar" onclick="responsive_menu()"> <i class="fas fa-bars"></i></a>
+			<main>
+				<section>
+					<h3>Welcome To Healthy Diet</h3>
+					<h1>Try Our Special <span class="change_text"></span></h1>
+					<p>"Healthy Diet once is not enough"</p>
+					<a href="#" class="firstbtn">Learn more</a>
+					<a href="#" class="secondbtn">Signup Here</a>
+				</section>
+			</main>	
+		</header>
+
+		<script>
+		  function responsive_menu(){
+		  	var a = document.getElementById('menu_small');
+		  	if(a.className === 'menubar'){
+		  		a.className += "responsive";
+		  	}else{
+		  		a.className = "menubar"
+		  	}
+		  }
+		</script>
+		
+	</body>
+	</html>
